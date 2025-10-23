@@ -1,0 +1,5 @@
+{
+  "name": "Indian TMDB Proxy",
+  "description": "A documentation site for a TMDB reverse proxy to bypass ISP blocks in India.",
+  "requestFramePermissions": []
+}
