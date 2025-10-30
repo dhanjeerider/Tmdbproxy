@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 interface UrlSetupProps {
@@ -16,7 +15,7 @@ const UrlSetup: React.FC<UrlSetupProps> = ({ onUrlSubmit }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+    <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md p-8 space-y-6 bg-gray-800 rounded-lg shadow-2xl">
         <div className="text-center">
             <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -44,6 +43,7 @@ const UrlSetup: React.FC<UrlSetupProps> = ({ onUrlSubmit }) => {
               onChange={(e) => setUrl(e.target.value)}
               className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-700 bg-gray-900 placeholder-gray-500 text-white focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 focus:z-10 sm:text-sm"
               placeholder="https://your-proxy.example.com"
+              autoFocus
             />
           </div>
 
